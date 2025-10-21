@@ -1,0 +1,9 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WebApi_TPI_AIRCNR_PII",
+    "version": "1.0"
+  },
+  "paths": { },
+  "components": { }
+}
