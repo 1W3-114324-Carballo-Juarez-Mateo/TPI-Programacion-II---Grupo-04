@@ -12,7 +12,7 @@ namespace WebApi_TPI_AIRCNR_PII.DTOs
 
         public DateTime? fecha_fin { get; set; }
 
-        public required virtual Cliente id_clienteNavigation { get; set; }
+        public required virtual ClienteDTO id_clienteNavigation { get; set; }
 
         public required virtual Estados_Alquiler id_estado_alquilerNavigation { get; set; }
 
@@ -25,9 +25,7 @@ namespace WebApi_TPI_AIRCNR_PII.DTOs
     {
         public int id_alquiler { get; set; }
 
-        public required virtual Cliente id_clienteNavigation { get; set; }
-
-        public int id_estado_alquiler { get; set; }
+        public required virtual ModifyClienteDTO id_clienteNavigation { get; set; }
 
         public decimal monto { get; set; }
 

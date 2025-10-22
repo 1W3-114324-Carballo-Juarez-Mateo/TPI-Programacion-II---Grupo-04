@@ -11,7 +11,7 @@ public partial class Contacto
 
     public int id_tipo_contacto { get; set; }
 
-    public string contacto1 { get; set; }
+    public string contacto { get; set; }
 
     public int? id_cliente { get; set; }
 

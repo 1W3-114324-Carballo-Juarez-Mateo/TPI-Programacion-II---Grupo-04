@@ -80,6 +80,7 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
         {
             try
             {
+                v.id_estado_vehiculo = 5;
                 await _vehiculos.AddAsync(v);
                 return await _context.SaveChangesAsync() > 0;
             }

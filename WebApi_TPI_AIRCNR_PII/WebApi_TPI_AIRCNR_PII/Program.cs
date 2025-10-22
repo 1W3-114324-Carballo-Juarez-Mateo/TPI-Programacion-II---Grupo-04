@@ -18,6 +18,8 @@ builder.Services.AddScoped<IVehiculoRepository, VehiculoRepository>();
 builder.Services.AddScoped<IAuxiliarRepository<Marca>, MarcasRepository>();
 builder.Services.AddScoped<IAuxiliarRepository<Tipos_Vehiculo>, TiposVehiculosRepository>();
 builder.Services.AddScoped<IAuxiliarRepository<Tipos_Documento>, TipoDocsRepository>();
+builder.Services.AddScoped<IAuxiliarRepository<Estados_Vehiculo>, EstadoVehiculoRepository>();
+builder.Services.AddScoped<IAuxiliarRepository<Sucursal>, SucursalRepository>();
 
 //Services
 builder.Services.AddScoped<IAlquilerService, AlquilerService>();

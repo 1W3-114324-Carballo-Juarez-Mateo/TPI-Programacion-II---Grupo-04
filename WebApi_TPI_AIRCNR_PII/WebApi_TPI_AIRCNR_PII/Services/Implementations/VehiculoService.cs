@@ -1,4 +1,5 @@
-﻿using WebApi_TPI_AIRCNR_PII.DTOs;
+﻿using System.Net.Http.Headers;
+using WebApi_TPI_AIRCNR_PII.DTOs;
 using WebApi_TPI_AIRCNR_PII.Helper;
 using WebApi_TPI_AIRCNR_PII.Models;
 using WebApi_TPI_AIRCNR_PII.Repositories.Interfaces;
@@ -10,13 +11,19 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
     {
 
         private readonly IVehiculoRepository _repo;
-        private readonly IAuxiliarRepository<Tipos_Vehiculo> _tipoVehiculo;
-        private readonly IAuxiliarRepository<Marca> _marca;
-        private readonly IAuxiliarRepository<Estados_Vehiculo> _estadoVehiculo;
-        public VehiculoService(IVehiculoRepository repo, IAuxiliarRepository<Tipos_Vehiculo> tipoVehiculo)
+        private readonly IAuxiliarRepository<Tipos_Vehiculo> _repoTipoVehiculo;
+        private readonly IAuxiliarRepository<Marca> _repoMarcas;
+        private readonly IAuxiliarRepository<Estados_Vehiculo> _repoEstadoVehiculo;
+        private readonly IAuxiliarRepository<Sucursal> _repoSucursal;
+        public VehiculoService(IVehiculoRepository repo, IAuxiliarRepository<Tipos_Vehiculo> repoTipoVehiculo,
+            IAuxiliarRepository<Marca> repoMarcas, IAuxiliarRepository<Estados_Vehiculo> repoEstadoVehiculo,
+            IAuxiliarRepository<Sucursal> repoSucursal)
         {
             _repo = repo;
-            _tipoVehiculo = tipoVehiculo;
+            _repoTipoVehiculo = repoTipoVehiculo;
+            _repoMarcas = repoMarcas;
+            _repoEstadoVehiculo = repoEstadoVehiculo;
+            _repoSucursal = repoSucursal;
         }
 
         private Vehiculo MapToBD(ModifyVehiculoDTO v)
@@ -45,7 +52,7 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
                 id_tipo_vehiculoNavigation = v.id_tipo_vehiculoNavigation,
                 id_marcaNavigation = v.id_marcaNavigation,
                 id_estado_vehiculoNavigation = v.id_estado_vehiculoNavigation,
-                id_sucursalNavigation = v.id_sucursalNavigation
+                id_sucursalNavigation = v.id_sucursalNavigation,
             };   
         }
 
@@ -71,81 +78,186 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
         public async Task<ResponseApi> GetAll()
         {
-            List<Vehiculo>? vehiculos = await _repo.GetAll();
-            if (vehiculos != null && vehiculos.Any())
+            try
             {
-                return new ResponseApi(200, "Vehiculos encontrados", vehiculos.Select(v => MapToDTO(v)).ToList());
+                List<Vehiculo>? vehiculos = await _repo.GetAll();
+                if (vehiculos != null && vehiculos.Any())
+                {
+                    return new ResponseApi(200, "Vehiculos encontrados", vehiculos.Select(v => MapToDTO(v)).ToList());
+                }
+                else { return new ResponseApi(404, "No se encontraron vehiculos disponibles"); }
             }
-            else { return new ResponseApi(404, "No se encontraron vehiculos disponibles"); }
+            catch (Exception)
+            {
+                return new ResponseApi(500, "Error interno del servidor");
+            }
         }
 
         public async Task<ResponseApi> GetByPatent(string patente)
         {
-            Vehiculo? v = await _repo.GetByPatent(patente);
-            if (v != null)
+            try
             {
-                return new ResponseApi(200, "Vehiculo encontrado", MapToDTO(v));
+                Vehiculo? v = await _repo.GetByPatent(patente);
+                if (v != null)
+                {
+                    return new ResponseApi(200, "Vehiculo encontrado", MapToDTO(v));
+                }
+                else { return new ResponseApi(404, "Vehiculo no encontrado"); }
             }
-            else { return new ResponseApi(404, "Vehiculo no encontrado"); }
-        }
-
-
-
-        private async Task<int> Validaciones(ModifyVehiculoDTO v)
-        {
-            //Id_Vehiculo
-            if (await _repo.GetById(v.id_vehiculo) != null)
+            catch (Exception)
             {
-                return 1;
-            };
-
-            //Patente 2
-            //si es put, debe EXISTIR 
-            //si es post NO DEBE EXISTIR 
-            //Tenemos id.
-            // en put: id existe ? si patenete ? si if(patente existe y id existe )= modificar
-            //post id existe? no, patente? no if(insert)
-
-
-            //Marca que exista 3
-
-            //Tipo_Vehiculo /que exista 4
-            if()
-            
-            //Modelo /que exista 5
-            
-            //Valor_Tasado / que no sea menor de 1Millon 6
-            
-            //Estado_Vehiculo / que exista 7
-            
-            //Sucursal /que exista 8
-
-            return 0;
+                return new ResponseApi(500, "Error interno del servidor");
+            }
         }
 
-        public Task<ResponseApi> Post(ModifyVehiculoDTO v)
+        private async Task<string> Validaciones(ModifyVehiculoDTO v)
         {
-            throw new NotImplementedException();
+            try
+            {
+                //Id_Vehiculo
+                if (await _repo.GetById(v.id_vehiculo) == null && v.id_vehiculo > 0)
+                {
+                    return "No se pudo encontrar el vehiculo";
+                }
+
+                //Patente que exista 2
+                List<Vehiculo>? vehiculos = await _repo.GetAll();
+                if (vehiculos != null && vehiculos.Any())
+                {
+                    if (vehiculos.Any(ve => ve.patente == v.patente && ve.id_vehiculo != v.id_vehiculo))
+                    {
+                        return "Ya existe un vehiculo con esa patente";
+                    }
+                }
+
+                //Marca que exista 3           
+                if (await _repoMarcas.GetById(v.id_marca) == null) 
+                {
+                    return "La marca ingresada no se encuentra registrada";                
+                }
+
+                //Tipo_Vehiculo /que exista 4
+                if (await _repoTipoVehiculo.GetById(v.id_tipo_vehiculo) == null) 
+                {
+                    return "El tipo de vehiculo no es valido";                
+                }
+
+                //Modelo /que exista 5
+                if(string.IsNullOrEmpty(v.modelo))               
+                {
+                    return "Debe ingresar un modelo de vehiculo";                
+                }      
+                
+                 //Valor_Tasado / que no sea menor de 1Millon 6
+                if (v.valor_tasado < 2500000) 
+                {
+                    return "El valor tasado debe ser mayor a $2.500.000";                
+                }
+
+                //Sucursal /que exista 8
+                if (await _repoSucursal.GetById(v.id_sucursal) == null) 
+                {
+                    return "No existe la sucursal ingresada";
+                }
+
+                 return "";
+            }
+            catch (Exception)
+            {
+                return "Error interno en validaciones";
+            }
         }
 
-        public Task<ResponseApi> Put(ModifyVehiculoDTO v)
+        public async Task<ResponseApi> Post(ModifyVehiculoDTO v)
         {
-            throw new NotImplementedException();
+            string validacion = await Validaciones(v);
+            v.id_vehiculo = 0;
+            try
+            {
+                if (string.IsNullOrEmpty(validacion))
+                {
+                    if (await _repo.Post(MapToBD(v)))
+                    {
+                        return new ResponseApi(200, "Vehiculo agregado con exito", v);
+                    }
+                    else { return new ResponseApi(400, "No se pudo agregar el vehiculo", v); }
+                }
+                else
+                {
+                    return new ResponseApi(400, validacion);
+                }
+            }
+            catch (Exception)
+            {
+                return new ResponseApi(500, "Error interno del servidor");
+            }
         }
 
-        public Task<ResponseApi> SoftDelete(int id)
+        public async Task<ResponseApi> Put(ModifyVehiculoDTO v)
         {
-            throw new NotImplementedException();
+            string validacion = await Validaciones(v);
+            try
+            {
+                if (string.IsNullOrEmpty(validacion))
+                {
+                    if (await _repo.Put(MapToBD(v)))
+                    {
+                        return new ResponseApi(200, "El vehiculo fue modificado con exito", v);
+                    }
+                    else { return new ResponseApi(400, "No se pudo modificar el vehiculo", v); }
+                }
+                else
+                {
+                    return new ResponseApi(400, validacion);
+                }
+            }
+            catch (Exception)
+            {
+                return new ResponseApi(500, "Error interno del servidor");
+            }        
+        }
+
+        public async Task<ResponseApi> SoftDelete(int id)
+        {
+            try
+            {
+                Vehiculo? v = await _repo.GetById(id);
+
+                if (v != null)
+                {
+                    if (v.id_estado_vehiculo == 35)
+                    {
+                        if (await _repo.SoftDelete(id))
+                        {
+                            return new ResponseApi(200, "Vehiculo dado de baja con exito");
+                        }
+                        else { return new ResponseApi(400, "No se pudo dar de baja el vehiculo"); }
+                    }
+                    else { return new ResponseApi(400, "El vehiculo seleccionado ya fue dado de baja"); }
+                }
+                else { return new ResponseApi(404, "Vehiculo no encontrado"); }
+            }
+            catch(Exception)
+            {
+                return new ResponseApi(500, "Error interno del servidor");
+            }
         }
 
         public async Task<ResponseApi> GetById(int id)
         {
-            Vehiculo? v = await _repo.GetById(id);
-            if (v != null)
+            try
             {
-                return new ResponseApi(200, "Vehiculo encontrado", MapToDTO(v));
+                Vehiculo? v = await _repo.GetById(id);
+                if (v != null)
+                {
+                    return new ResponseApi(200, "Vehiculo encontrado", MapToDTO(v));
+                }
+                else { return new ResponseApi(404, "Vehiculo no encontrado"); }
             }
-            else { return new ResponseApi(404, "Vehiculo no encontrado"); }
+            catch (Exception)
+            {
+                return new ResponseApi(500, "Error interno del servidor");
+            }
         }
     }
 }
