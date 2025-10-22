@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace WebApi_TPI_AIRCNR_PII.Models;
 
-public partial class Estados_Alquilere
+public partial class Estados_Alquiler
 {
     public int id_estado_alquiler { get; set; }
 

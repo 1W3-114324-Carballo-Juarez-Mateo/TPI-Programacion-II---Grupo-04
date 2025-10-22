@@ -4,22 +4,23 @@ using WebApi_TPI_AIRCNR_PII.Repositories.Interfaces;
 
 namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
 {
-    public class MarcasRepository : IAuxiliarRepository<Marca>
+    public class SucursalRepository : IAuxiliarRepository<Sucursal>
     {
-        private readonly AlquileresContext _context;
-        private readonly DbSet<Marca> _marcas;
 
-        public MarcasRepository(AlquileresContext context)
+        private readonly AlquileresContext _context;
+        private readonly DbSet<Sucursal> _sucursales;
+
+        public SucursalRepository(AlquileresContext context)
         {
             _context = context;
-            _marcas = _context.Set<Marca>();
-            
+            _sucursales = _context.Set<Sucursal>();
         }
-        public async Task<List<Marca>?> GetAll()
+
+        public async Task<List<Sucursal>?> GetAll()
         {
             try
             {
-                return await _marcas.AsNoTracking().ToListAsync();
+                return await _sucursales.AsNoTracking().ToListAsync();
             }
             catch (Exception ex)
             {
@@ -28,11 +29,11 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
             }
         }
 
-        public async Task<Marca?> GetById(int id)
+        public async Task<Sucursal?> GetById(int id)
         {
             try
             {
-                return await _marcas.AsNoTracking().FirstOrDefaultAsync(m => m.id_marca == id);
+                return await _sucursales.AsNoTracking().FirstOrDefaultAsync(s => s.id_sucursal == id);
             }
             catch (Exception ex)
             {

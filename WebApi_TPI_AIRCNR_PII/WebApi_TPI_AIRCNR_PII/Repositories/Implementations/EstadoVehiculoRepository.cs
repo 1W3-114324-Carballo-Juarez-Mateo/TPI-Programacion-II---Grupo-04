@@ -4,22 +4,23 @@ using WebApi_TPI_AIRCNR_PII.Repositories.Interfaces;
 
 namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
 {
-    public class MarcasRepository : IAuxiliarRepository<Marca>
+    public class EstadoVehiculoRepository : IAuxiliarRepository<Estados_Vehiculo>
     {
-        private readonly AlquileresContext _context;
-        private readonly DbSet<Marca> _marcas;
 
-        public MarcasRepository(AlquileresContext context)
+        private readonly AlquileresContext _context;
+        private readonly DbSet<Estados_Vehiculo> _estados;
+
+        public EstadoVehiculoRepository(AlquileresContext context)
         {
             _context = context;
-            _marcas = _context.Set<Marca>();
-            
+            _estados = _context.Set<Estados_Vehiculo>();
         }
-        public async Task<List<Marca>?> GetAll()
+
+        public async Task<List<Estados_Vehiculo>?> GetAll()
         {
             try
             {
-                return await _marcas.AsNoTracking().ToListAsync();
+                return await _estados.AsNoTracking().ToListAsync();
             }
             catch (Exception ex)
             {
@@ -28,11 +29,11 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
             }
         }
 
-        public async Task<Marca?> GetById(int id)
+        public async Task<Estados_Vehiculo?> GetById(int id)
         {
             try
             {
-                return await _marcas.AsNoTracking().FirstOrDefaultAsync(m => m.id_marca == id);
+                return await _estados.AsNoTracking().FirstOrDefaultAsync(e => e.id_estado_vehiculo == id);
             }
             catch (Exception ex)
             {

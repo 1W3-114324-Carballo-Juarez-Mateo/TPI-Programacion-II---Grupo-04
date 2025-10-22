@@ -28,5 +28,18 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
                 return null;
             }
         }
+
+        public async Task<Tipos_Vehiculo?> GetById(int id)
+        {
+            try
+            {
+                return await _tiposVehiculos.AsNoTracking().FirstOrDefaultAsync(tv => tv.id_tipo_vehiculo == id);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error inesperado: " + ex.Message);
+                return null;
+            }
+        }
     }
 }

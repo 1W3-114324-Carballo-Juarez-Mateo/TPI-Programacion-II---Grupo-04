@@ -23,7 +23,7 @@ public partial class AlquileresContext : DbContext
 
     public virtual DbSet<Empleado> Empleados { get; set; }
 
-    public virtual DbSet<Estados_Alquilere> Estados_Alquileres { get; set; }
+    public virtual DbSet<Estados_Alquiler> Estados_Alquileres { get; set; }
 
     public virtual DbSet<Estados_Vehiculo> Estados_Vehiculos { get; set; }
 
@@ -40,6 +40,8 @@ public partial class AlquileresContext : DbContext
     public virtual DbSet<Tipos_Documento> Tipos_Documentos { get; set; }
 
     public virtual DbSet<Tipos_Vehiculo> Tipos_Vehiculos { get; set; }
+
+    public virtual DbSet<Usuarios_Empleado> Usuarios_Empleados { get; set; }
 
     public virtual DbSet<Vehiculo> Vehiculos { get; set; }
 
@@ -151,9 +153,13 @@ public partial class AlquileresContext : DbContext
                 .HasForeignKey(d => d.id_tipo_documento)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Empleados_Tipos_Documentos");
+
+            entity.HasOne(d => d.id_usuarioNavigation).WithMany(p => p.Empleados)
+                .HasForeignKey(d => d.id_usuario)
+                .HasConstraintName("FK_Empleados_Usuarios_Empleados");
         });
 
-        modelBuilder.Entity<Estados_Alquilere>(entity =>
+        modelBuilder.Entity<Estados_Alquiler>(entity =>
         {
             entity.HasKey(e => e.id_estado_alquiler);
 
@@ -191,7 +197,7 @@ public partial class AlquileresContext : DbContext
         {
             entity.HasKey(e => e.id_marca);
 
-            entity.Property(e => e.marca)
+            entity.Property(e => e.marca1)
                 .IsRequired()
                 .HasMaxLength(100)
                 .IsUnicode(false)
@@ -212,6 +218,10 @@ public partial class AlquileresContext : DbContext
         modelBuilder.Entity<Sucursal>(entity =>
         {
             entity.HasKey(e => e.id_sucursal);
+
+            entity.Property(e => e.descripcion)
+                .HasMaxLength(100)
+                .IsUnicode(false);
 
             entity.HasOne(d => d.id_barrioNavigation).WithMany(p => p.Sucursales)
                 .HasForeignKey(d => d.id_barrio)
@@ -246,6 +256,20 @@ public partial class AlquileresContext : DbContext
             entity.Property(e => e.tipo)
                 .IsRequired()
                 .HasMaxLength(100)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<Usuarios_Empleado>(entity =>
+        {
+            entity.HasKey(e => e.id_usuario);
+
+            entity.Property(e => e.contraseña)
+                .IsRequired()
+                .HasMaxLength(200)
+                .IsUnicode(false);
+            entity.Property(e => e.usuario)
+                .IsRequired()
+                .HasMaxLength(200)
                 .IsUnicode(false);
         });
 

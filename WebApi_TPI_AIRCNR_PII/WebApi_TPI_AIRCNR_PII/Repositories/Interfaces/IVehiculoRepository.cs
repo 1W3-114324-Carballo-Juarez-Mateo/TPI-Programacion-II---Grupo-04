@@ -6,6 +6,8 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Interfaces
     {
         public Task<List<Vehiculo>?> GetAll();
 
+        public Task<Vehiculo?> GetById(int id);
+
         public Task<Vehiculo?> GetByPatent(string patente);
 
         public Task<bool> Post(Vehiculo v);

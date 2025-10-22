@@ -1,4 +1,3 @@
-
 --* CODIGO DDL *--
 
 CREATE DATABASE AIR_CNR_PII;
@@ -32,6 +31,7 @@ GO
 
 CREATE TABLE Sucursales(
 id_sucursal int IDENTITY(5,10),
+descripcion varchar(100),
 id_barrio int not null,
 CONSTRAINT PK_Sucursales PRIMARY KEY (id_sucursal),
 CONSTRAINT FK_Sucursales_Barrios FOREIGN KEY (id_barrio)
@@ -44,17 +44,27 @@ tipo varchar(100) not null,
 CONSTRAINT PK_Tipos_Documentos PRIMARY KEY (id_tipo_documento));
 GO
 
+CREATE TABLE Usuarios_Empleados(
+id_usuario int IDENTITY(5,10),
+usuario varchar(200) not null,
+contraseña varchar(200) not null,
+CONSTRAINT PK_Usuarios_Empleados PRIMARY KEY (id_usuario));
+
 CREATE TABLE Empleados(
 id_empleado int IDENTITY(5,10),
+legajo int not null,
 nombre varchar(100) not null,
 documento varchar(50) not null,
 id_tipo_documento int not null,
 id_sucursal int not null,
+id_usuario int null,
 CONSTRAINT PK_Empleados PRIMARY KEY (id_empleado),
 CONSTRAINT FK_Empleados_Tipos_Documentos FOREIGN KEY (id_tipo_documento)
 REFERENCES Tipos_Documentos (id_tipo_documento),
 CONSTRAINT FK_Empleados_Sucursales FOREIGN KEY (id_sucursal)
-REFERENCES Sucursales (id_sucursal));
+REFERENCES Sucursales (id_sucursal),
+CONSTRAINT FK_Empleados_Usuarios_Empleados FOREIGN KEY (id_usuario)
+REFERENCES Usuarios_Empleados (id_usuario));
 GO
 
 CREATE TABLE Clientes(
@@ -77,7 +87,7 @@ CREATE TABLE Contactos(
 id_contacto int IDENTITY(5,10),
 id_tipo_contacto int not null,
 contacto varchar(150) not null,
-id_cliente int null
+id_cliente int null,
 CONSTRAINT PK_Contactos PRIMARY KEY (id_contacto),
 CONSTRAINT FK_Contactos_Tipos_Contactos FOREIGN KEY (id_tipo_contacto)
 REFERENCES Tipos_Contactos (id_tipo_contacto),
@@ -227,3 +237,9 @@ VALUES
 ('BMW'),
 ('Ford'),
 ('Ferrari');
+
+INSERT INTO Empleados (nombre, legajo, documento, id_sucursal, id_tipo_documento)
+VALUES ('Mateo Carballo Juarez', 114324, '44272598', 5, 5),
+('Valentina Busceni', 412073, '48124188', 25, 5),
+('Marco Ticiano Barabino', 412013, '41762189', 15, 5),
+('Aylen Milena Garcia Maestri', 421410, '41349105', 35, 5);

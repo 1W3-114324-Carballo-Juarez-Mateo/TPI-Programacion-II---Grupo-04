@@ -9,6 +9,8 @@ public partial class Empleado
 {
     public int id_empleado { get; set; }
 
+    public int legajo { get; set; }
+
     public string nombre { get; set; }
 
     public string documento { get; set; }
@@ -17,7 +19,11 @@ public partial class Empleado
 
     public int id_sucursal { get; set; }
 
+    public int? id_usuario { get; set; }
+
     public virtual Sucursal id_sucursalNavigation { get; set; }
 
     public virtual Tipos_Documento id_tipo_documentoNavigation { get; set; }
+
+    public virtual Usuarios_Empleado id_usuarioNavigation { get; set; }
 }

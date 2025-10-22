@@ -50,6 +50,19 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
             }
         }
 
+        public async Task<Vehiculo?> GetById(int id)
+        {
+            try
+            {
+                return await _vehiculos.AsNoTracking().FirstOrDefaultAsync(v => v.id_vehiculo == id);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error inesperado: " + ex.Message);
+                return null;
+            }
+        }
+
         public async Task<Vehiculo?> GetByPatent(string patente)
         {
             try

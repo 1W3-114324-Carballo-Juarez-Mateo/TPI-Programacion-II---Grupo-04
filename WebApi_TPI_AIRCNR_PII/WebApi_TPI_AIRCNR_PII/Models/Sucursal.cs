@@ -9,6 +9,8 @@ public partial class Sucursal
 {
     public int id_sucursal { get; set; }
 
+    public string descripcion { get; set; }
+
     public int id_barrio { get; set; }
 
     public virtual ICollection<Alquiler> Alquileres { get; set; } = new List<Alquiler>();

@@ -25,7 +25,7 @@ public partial class Alquiler
 
     public virtual Cliente id_clienteNavigation { get; set; }
 
-    public virtual Estados_Alquilere id_estado_alquilerNavigation { get; set; }
+    public virtual Estados_Alquiler id_estado_alquilerNavigation { get; set; }
 
     public virtual Sucursal id_sucursalNavigation { get; set; }
 

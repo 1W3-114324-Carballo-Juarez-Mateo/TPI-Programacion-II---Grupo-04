@@ -3,32 +3,104 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\services\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\services\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\repositories\\implementations\\alquilerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\repositories\\implementations\\alquilerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\repositories\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\repositories\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\repositories\\implementations\\tipodocrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\repositories\\implementations\\tipodocrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\dtos\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\dtos\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\models\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\models\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\models\\localidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\models\\localidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\dtos\\vehiculodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\dtos\\vehiculodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\repositories\\implementations\\vehiculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\repositories\\implementations\\vehiculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\dtos\\tipovehiculodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\dtos\\tipovehiculodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\dtos\\tipodocdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\dtos\\tipodocdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\repositories\\implementations\\tiposvehiculosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\repositories\\implementations\\tiposvehiculosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\models\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\models\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\dtos\\marcadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\dtos\\marcadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\repositories\\implementations\\marcasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\repositories\\implementations\\marcasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\dtos\\alquilerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\dtos\\alquilerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\services\\interfaces\\ialquilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\services\\interfaces\\ialquilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\helper\\responseapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\helper\\responseapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\repositories\\interfaces\\ialquilerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\repositories\\interfaces\\ialquilerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\services\\interfaces\\ivehiculoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\services\\interfaces\\ivehiculoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\services\\interfaces\\iauxiliarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\services\\interfaces\\iauxiliarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\repositories\\interfaces\\ivehiculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\repositories\\interfaces\\ivehiculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\repositories\\interfaces\\iauxiliarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\repositories\\interfaces\\iauxiliarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\models\\alquilerescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\models\\alquilerescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\services\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\services\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|c:\\users\\usuario\\desktop\\utn tup\\programacion ii\\tpi\\tpi-programacion-ii---grupo-04\\webapi_tpi_aircnr_pii\\webapi_tpi_aircnr_pii\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{127647E2-87D6-41BA-BB15-0FF1EFAF767D}|WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII.csproj|solutionrelative:webapi_tpi_aircnr_pii\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,81 +110,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FileName.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Services\\FileName.cs",
-              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Services\\FileName.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Services\\FileName.cs",
-              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Services\\FileName.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T13:31:23.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FileName.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\FileName.cs",
-              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Repositories\\FileName.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\FileName.cs",
-              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Repositories\\FileName.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T13:31:00.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FileName.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\FileName.cs",
-              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\DTOs\\FileName.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\FileName.cs",
-              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\DTOs\\FileName.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T13:30:46.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\appsettings.json",
-              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\appsettings.json",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\appsettings.json",
-              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-21T13:29:39.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Program.cs",
-              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Program.cs",
-              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABWAAAAAAAAAA==",
+              "Title": "Vehiculo.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\Vehiculo.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Models\\Vehiculo.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\Vehiculo.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Models\\Vehiculo.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCEAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T13:29:04.09Z",
+              "WhenOpened": "2025-10-22T13:53:56.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "VehiculoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\VehiculoDTO.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\DTOs\\VehiculoDTO.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\VehiculoDTO.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\DTOs\\VehiculoDTO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:53:49.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VehiculoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\VehiculoRepository.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\VehiculoRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\VehiculoRepository.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\VehiculoRepository.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAswBUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:41:42.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Localidad.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\Localidad.cs",
               "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Models\\Localidad.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\Localidad.cs*",
-              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Models\\Localidad.cs*",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\Localidad.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Models\\Localidad.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T13:28:37.484Z",
@@ -120,20 +166,271 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AlquileresContext.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\AlquileresContext.cs",
-              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Models\\AlquileresContext.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\AlquileresContext.cs*",
-              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Models\\AlquileresContext.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Alquiler.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\Alquiler.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Models\\Alquiler.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\Alquiler.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Models\\Alquiler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T13:27:32.269Z",
+              "WhenOpened": "2025-10-21T13:35:07.187Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TipoDocRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\TipoDocRepository.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\TipoDocRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\TipoDocRepository.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\TipoDocRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:43:42.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlquilerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\AlquilerRepository.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\AlquilerRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\AlquilerRepository.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\AlquilerRepository.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwEoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:41:26.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TipoVehiculoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\TipoVehiculoDTO.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\DTOs\\TipoVehiculoDTO.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\TipoVehiculoDTO.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\DTOs\\TipoVehiculoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:53:24.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TipoDocDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\TipoDocDTO.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\DTOs\\TipoDocDTO.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\TipoDocDTO.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\DTOs\\TipoDocDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:50:05.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Marca.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\Marca.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Models\\Marca.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\Marca.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Models\\Marca.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T14:30:49.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MarcaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\MarcaDTO.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\DTOs\\MarcaDTO.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\MarcaDTO.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\DTOs\\MarcaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:50:13.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MarcasRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\MarcasRepository.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\MarcasRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\MarcasRepository.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\MarcasRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:57:13.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AlquilerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\AlquilerDTO.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\DTOs\\AlquilerDTO.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\DTOs\\AlquilerDTO.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\DTOs\\AlquilerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:48:33.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TiposVehiculosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\TiposVehiculosRepository.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\TiposVehiculosRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\TiposVehiculosRepository.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Repositories\\Implementations\\TiposVehiculosRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:57:47.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAlquilerService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IAlquilerService.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IAlquilerService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IAlquilerService.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IAlquilerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:44:19.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ResponseApi.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Helper\\ResponseApi.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Helper\\ResponseApi.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Helper\\ResponseApi.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Helper\\ResponseApi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:05:40.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IVehiculoService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IVehiculoService.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IVehiculoService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IVehiculoService.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IVehiculoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:44:57.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IAuxiliarService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IAuxiliarService.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IAuxiliarService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IAuxiliarService.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Services\\Interfaces\\IAuxiliarService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:44:38.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Program.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Program.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:29:04.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IAlquilerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IAlquilerRepository.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IAlquilerRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IAlquilerRepository.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IAlquilerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:40:00.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IVehiculoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IVehiculoRepository.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IVehiculoRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IVehiculoRepository.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IVehiculoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:40:41.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IAuxiliarRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IAuxiliarRepository.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IAuxiliarRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IAuxiliarRepository.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Repositories\\Interfaces\\IAuxiliarRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:38:53.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AlquileresContext.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\AlquileresContext.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Models\\AlquileresContext.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Models\\AlquileresContext.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Models\\AlquileresContext.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAAwMIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:27:32.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FileName.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Services\\FileName.cs",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\Services\\FileName.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\Services\\FileName.cs",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\Services\\FileName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T13:31:23.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApi_TPI_AIRCNR_PII\\appsettings.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UTN TUP\\Programacion II\\TPI\\TPI-Programacion-II---Grupo-04\\WebApi_TPI_AIRCNR_PII\\WebApi_TPI_AIRCNR_PII\\appsettings.json",
+              "RelativeToolTip": "WebApi_TPI_AIRCNR_PII\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-21T13:29:39.285Z"
             }
           ]
         }

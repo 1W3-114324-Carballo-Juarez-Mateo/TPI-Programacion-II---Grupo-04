@@ -3,5 +3,7 @@
     public interface IAuxiliarRepository <T>
     {
         public Task<List<T>?> GetAll();
+
+        public Task<T?> GetById(int id);
     }
 }
