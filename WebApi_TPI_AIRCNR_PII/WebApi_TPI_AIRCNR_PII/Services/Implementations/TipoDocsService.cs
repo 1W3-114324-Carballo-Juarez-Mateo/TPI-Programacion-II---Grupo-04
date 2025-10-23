@@ -6,7 +6,7 @@ using WebApi_TPI_AIRCNR_PII.Services.Interfaces;
 
 namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 {
-    public class TipoDocsService : IAuxiliarService
+    public class TipoDocsService : IAuxiliarService<Tipos_Documento>
     {
 
         private readonly IAuxiliarRepository <Tipos_Documento> _repo;

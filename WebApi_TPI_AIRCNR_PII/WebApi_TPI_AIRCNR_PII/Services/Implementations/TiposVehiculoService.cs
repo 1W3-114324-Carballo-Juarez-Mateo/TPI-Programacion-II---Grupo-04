@@ -6,7 +6,7 @@ using WebApi_TPI_AIRCNR_PII.Services.Interfaces;
 
 namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 {
-    public class TiposVehiculoService : IAuxiliarService
+    public class TiposVehiculoService : IAuxiliarService<Tipos_Vehiculo>
     {
         private readonly IAuxiliarRepository<Tipos_Vehiculo> _repo;
         public TiposVehiculoService(IAuxiliarRepository<Tipos_Vehiculo> repo)

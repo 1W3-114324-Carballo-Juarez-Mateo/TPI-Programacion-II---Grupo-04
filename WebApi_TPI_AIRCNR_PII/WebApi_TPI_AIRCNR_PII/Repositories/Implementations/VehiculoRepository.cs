@@ -24,6 +24,7 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
                 Vehiculo? v = await _vehiculos
                     .Include(v => v.id_estado_vehiculoNavigation)
                     .FirstOrDefaultAsync(v => v.id_vehiculo == id);
+
                 if (v != null)
                 {
                     v.id_estado_vehiculoNavigation.estado_vehiculo = nvoEstado;

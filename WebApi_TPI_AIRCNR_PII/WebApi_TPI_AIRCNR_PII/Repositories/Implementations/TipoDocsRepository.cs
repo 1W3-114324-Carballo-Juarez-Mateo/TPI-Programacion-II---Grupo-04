@@ -19,9 +19,7 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
         {
             try
             {
-                return await _documentos
-                .AsNoTracking()
-                .ToListAsync();
+                return await _documentos.AsNoTracking().ToListAsync();
             }
             catch (Exception ex)
             {

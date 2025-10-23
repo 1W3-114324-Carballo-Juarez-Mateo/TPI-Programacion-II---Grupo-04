@@ -225,7 +225,7 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
                 if (v != null)
                 {
-                    if (v.id_estado_vehiculo == 35)
+                    if (v.id_estado_vehiculo != 35)
                     {
                         if (await _repo.SoftDelete(id))
                         {

@@ -2,7 +2,7 @@
 
 namespace WebApi_TPI_AIRCNR_PII.Services.Interfaces
 {
-    public interface IAuxiliarService 
+    public interface IAuxiliarService<T>
     {
         public Task<ResponseApi> GetAll();
     }

@@ -18,9 +18,7 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
         {
             try
             {
-                return await _tiposVehiculos
-                .AsNoTracking()
-                .ToListAsync();
+                return await _tiposVehiculos.AsNoTracking().ToListAsync();
             }
             catch (Exception ex)
             {
