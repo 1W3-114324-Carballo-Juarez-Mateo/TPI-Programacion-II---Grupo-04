@@ -110,7 +110,7 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
             }
         }
 
-        private async Task<string> Validaciones(ModifyVehiculoDTO v)
+        private async Task<string?> Validaciones(ModifyVehiculoDTO v)
         {
             try
             {
@@ -149,7 +149,7 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
                 }      
                 
                  //Valor_Tasado / que no sea menor de 1Millon 6
-                if (v.valor_tasado < 2500000) 
+                if (v.valor_tasado <= 2500000) 
                 {
                     return "El valor tasado debe ser mayor a $2.500.000";                
                 }
@@ -166,7 +166,7 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
                     return "No existe la sucursal ingresada";
                 }
 
-                 return "";
+                 return null;
             }
             catch (Exception)
             {
@@ -176,7 +176,7 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
         public async Task<ResponseApi> Post(ModifyVehiculoDTO v)
         {
-            string validacion = await Validaciones(v);
+            string? validacion = await Validaciones(v);
             v.id_vehiculo = 0;
             try
             {
@@ -201,7 +201,7 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
         public async Task<ResponseApi> Put(ModifyVehiculoDTO v)
         {
-            string validacion = await Validaciones(v);
+            string? validacion = await Validaciones(v);
             try
             {
                 if (string.IsNullOrEmpty(validacion))

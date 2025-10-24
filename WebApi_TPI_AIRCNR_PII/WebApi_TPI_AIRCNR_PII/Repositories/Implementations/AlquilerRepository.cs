@@ -66,12 +66,10 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
         public async Task<bool> Put(Alquiler a)
         {
             Alquiler? alquiler = await _alquileres
-                .Include(a => a.id_clienteNavigation)
                 .FirstOrDefaultAsync(al => al.id_alquiler == a.id_alquiler);
 
             if(alquiler != null)
             {
-                alquiler.id_clienteNavigation = a.id_clienteNavigation;
                 alquiler.id_vehiculo = a.id_vehiculo;
                 alquiler.monto = a.monto;
                 alquiler.fecha_inicio = a.fecha_inicio;

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using WebApi_TPI_AIRCNR_PII.DTOs;
 using WebApi_TPI_AIRCNR_PII.Helper;
 using WebApi_TPI_AIRCNR_PII.Models;
@@ -27,12 +28,19 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
         private Alquiler MapToBD(ModifyAlquilerDTO a)
         {
-            return new Alquiler
+            Alquiler alquiler = new Alquiler
             {
                 id_alquiler = a.id_alquiler,
                 fecha_fin = a.fecha_fin,
-                fecha_inicio = a.fecha_inicio,
-                id_clienteNavigation = new Cliente
+                fecha_inicio = a.fecha_inicio,  
+                monto = a.monto,
+                id_sucursal = a.id_sucursal,
+                id_vehiculo = a.id_vehiculo
+            };
+
+            if (a.id_clienteNavigation.id_cliente == 0)
+            {
+                alquiler.id_clienteNavigation = new Cliente
                 {
                     id_cliente = a.id_clienteNavigation.id_cliente,
                     nombre = a.id_clienteNavigation.nombre,
@@ -44,11 +52,14 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
                         contacto = c.contacto,
                         id_tipo_contacto = c.id_tipo_contacto
                     }).ToList()
-                },
-                monto = a.monto,
-                id_sucursal = a.id_sucursal,
-                id_vehiculo = a.id_vehiculo
-            };
+                };
+            }
+            else
+            {
+                alquiler.id_cliente = a.id_clienteNavigation.id_cliente;
+            }
+
+            return alquiler;
         }
 
         private AlquilerDTO MapToDTO(Alquiler a)
@@ -148,7 +159,7 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
         // Completar Validaciones y Metodos Post y Put (Guiarse en base a VehiculoService)
 
-        private async Task<string> Validaciones(ModifyAlquilerDTO ma)
+        private async Task<string?> Validaciones(ModifyAlquilerDTO ma)
         {
             try
             {
@@ -173,7 +184,6 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
                 if (ma.fecha_fin.HasValue)
                 {
-
                     if (ma.fecha_fin < ma.fecha_inicio.AddHours(8))
                     {
                         return "El alquiler debe durar al menos 8 horas";
@@ -185,6 +195,13 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
                     //{
                     //    return "El alquiler debe durar al menos 8 horas";
                     //}
+                }
+
+                Cliente? validarCliente = await _repoClientes.GetByDocument(ma.id_clienteNavigation.documento);
+
+                if (validarCliente != null && validarCliente.id_cliente != ma.id_clienteNavigation.id_cliente)
+                {
+                    return "Ya existe un Cliente con este Documento";
                 }
 
                 //monto no debe ser menor a 0 
@@ -214,7 +231,7 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
                 //
 
-                return "";
+                return null;
 
             }
             catch (Exception)
@@ -226,7 +243,7 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
         public async Task<ResponseApi> Post(ModifyAlquilerDTO ma)
         {
-            string validacion = await Validaciones(ma);
+            string? validacion = await Validaciones(ma);
             ma.id_alquiler = 0;
             try
             {
@@ -251,16 +268,20 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
         public async Task<ResponseApi> Put(ModifyAlquilerDTO ma)
         {
-            string validacion = await Validaciones(ma);
-            try
+            string? validacion = await Validaciones(ma);
+            try 
             {
                 if (string.IsNullOrEmpty(validacion))
                 {
-                    if (await _repo.Put(MapToBD(ma)))
+                    if (await _repoClientes.Put(MapToBD(ma).id_clienteNavigation))
                     {
-                        return new ResponseApi(200, "Alquiler modificado con exito", ma);
+                        if (await _repo.Put(MapToBD(ma)))
+                        {
+                            return new ResponseApi(200, "Alquiler modificado con exito", ma);
+                        }
+                        else { return new ResponseApi(400, "No se pudo modificar el alquiler", ma); }
                     }
-                    else { return new ResponseApi(400, "No se pudo modificar el alquiler", ma); }
+                    else { return new ResponseApi(400, "No se pudo modificar el Cliente"); }
                 }
                 else
                 {

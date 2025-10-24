@@ -7,5 +7,6 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Interfaces
         public Task<List<Cliente>?> GetAll();
         public Task<Cliente?> GetById(int id);
         public Task<Cliente?> GetByDocument(string documento);
+        public Task<bool> Put(Cliente c);
     }
 }

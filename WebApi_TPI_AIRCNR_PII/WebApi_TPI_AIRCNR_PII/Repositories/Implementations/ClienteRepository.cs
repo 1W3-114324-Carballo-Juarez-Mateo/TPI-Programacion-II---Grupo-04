@@ -30,5 +30,18 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
         {
             return await _clientes.AsNoTracking().FirstOrDefaultAsync(c => c.id_cliente == id);
         }
+
+        public async Task<bool> Put(Cliente c)
+        {
+            Cliente? cliente = await _clientes.FindAsync(c.id_cliente);
+            if (cliente != null)
+            {
+                cliente.nombre = c.nombre;
+                cliente.documento = c.documento;
+                cliente.Contactos = c.Contactos;
+                cliente.id_tipo_documento = c.id_tipo_documento;
+            }
+            return await _context.SaveChangesAsync() > 0;
+        }
     }
 }
