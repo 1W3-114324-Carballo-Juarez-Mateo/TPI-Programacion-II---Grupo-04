@@ -18,12 +18,19 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
         public async Task<ResponseApi> GetAll()
         {
-            List<Marca>? marcas = await _repo.GetAll();
-            if (marcas != null && marcas.Any())
+            try
             {
-                return new ResponseApi(200, "Marcas encontradas", marcas.Select(m => new MarcaDTO { id_marca = m.id_marca, marca = m.marca }));
+                List<Marca>? marcas = await _repo.GetAll();
+                if (marcas != null && marcas.Any())
+                {
+                    return new ResponseApi(200, "Marcas encontradas", marcas.Select(m => new MarcaDTO { id_marca = m.id_marca, marca = m.marca }));
+                }
+                else { return new ResponseApi(404, "No se encontraron marcas"); }
             }
-            else { return new ResponseApi(404, "No se encontraron marcas"); }
+            catch (Exception)
+            {
+                return new ResponseApi(500, "Error interno del servidor");
+            }
         }
     }
 }

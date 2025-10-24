@@ -1,20 +1,18 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApi_TPI_AIRCNR_PII.Models;
-using WebApi_TPI_AIRCNR_PII.Repositories.Implementations;
-using WebApi_TPI_AIRCNR_PII.Services.Implementations;
 using WebApi_TPI_AIRCNR_PII.Services.Interfaces;
 
 namespace WebApi_TPI_AIRCNR_PII.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MarcaController : ControllerBase
+    public class TipoVehiculoController : ControllerBase
     {
 
-        private readonly IAuxiliarService<Marca> _service;
+        private readonly IAuxiliarService<Tipos_Vehiculo> _service;
 
-        public MarcaController(IAuxiliarService<Marca> service)
+        public TipoVehiculoController(IAuxiliarService<Tipos_Vehiculo> service)
         {
             _service = service;
         }

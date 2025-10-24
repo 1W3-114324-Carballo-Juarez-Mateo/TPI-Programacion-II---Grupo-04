@@ -74,42 +74,65 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
 
         public async Task<ResponseApi> CambioEstado(int id, string estado)
         {
-            Alquiler? alquiler = await _repo.GetById(id);
-            if (alquiler != null)
+            try
             {
-                if (string.IsNullOrEmpty(estado))
+                Alquiler? alquiler = await _repo.GetById(id);
+                if (alquiler != null)
                 {
-                    if (await _repo.CambioEstado(id, estado))
+                    if (string.IsNullOrEmpty(estado))
                     {
-                        return new ResponseApi(200, "Cambio de estado realizado con exito");
+                        if (await _repo.CambioEstado(id, estado))
+                        {
+                            return new ResponseApi(200, "Cambio de estado realizado con exito");
+                        }
+                        else { return new ResponseApi(400, "No se pudo realizar el cambio de estado"); }
                     }
-                    else { return new ResponseApi(400, "No se pudo realizar el cambio de estado"); }
+                    else { return new ResponseApi(400, "Se debe enviar un estado valido para el alquiler"); }
                 }
-                else { return new ResponseApi(400, "Se debe enviar un estado valido para el alquiler"); }
+                else { return new ResponseApi(404, "Alquiler no encontrado"); }
             }
-            else { return new ResponseApi(404, "Alquiler no encontrado"); }
+            catch (Exception)
+            {
+                return new ResponseApi(500, "Error interno del servidor");
+            }
         }
 
         public async Task<ResponseApi> GetAll(string docCliente, string? estado)
         {
-            List<Alquiler>? alquileres = await _repo.GetAll(docCliente, estado);
-            if (alquileres != null && alquileres.Any())
+            try
             {
-                return new ResponseApi(200, "Alquileres encontrados", alquileres.Select(a => MapToDTO(a)).ToList());
+                List<Alquiler>? alquileres = await _repo.GetAll(docCliente, estado);
+                if (alquileres != null && alquileres.Any())
+                {
+                    return new ResponseApi(200, "Alquileres encontrados", alquileres.Select(a => MapToDTO(a)).ToList());
+                }
+                else { return new ResponseApi(404, "No se encontraron alquileres registrados"); }
             }
-            else { return new ResponseApi(404, "No se encontraron alquileres registrados"); }
-            
+            catch (Exception)
+            {
+                return new ResponseApi(500, "Error interno del servidor");
+            }
+
         }
 
         public async Task<ResponseApi> GetById(int id)
         {
-            Alquiler? alquiler = await _repo.GetById(id);
-            if (alquiler != null)
+            try
             {
-                return new ResponseApi(200, "Alquiler encontrado", MapToDTO(alquiler));
+                Alquiler? alquiler = await _repo.GetById(id);
+                if (alquiler != null)
+                {
+                    return new ResponseApi(200, "Alquiler encontrado", MapToDTO(alquiler));
+                }
+                else { return new ResponseApi(404, "Alquiler no encontrado"); }
             }
-            else { return new ResponseApi(404, "Alquiler no encontrado"); }
+            catch (Exception)
+            {
+                return new ResponseApi(500, "Error interno del servidor");
+            }
         }
+
+        // Completar Validaciones y Metodos Post y Put (Guiarse en base a VehiculoService)
 
         private async Task<string> Validaciones(ModifyAlquilerDTO ma)
         {
