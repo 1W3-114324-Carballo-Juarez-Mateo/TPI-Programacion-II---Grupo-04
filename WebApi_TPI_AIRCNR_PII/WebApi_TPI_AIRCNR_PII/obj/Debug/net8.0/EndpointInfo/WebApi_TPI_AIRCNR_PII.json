@@ -4,6 +4,480 @@
     "title": "WebApi_TPI_AIRCNR_PII",
     "version": "1.0"
   },
-  "paths": { },
-  "components": { }
+  "paths": {
+    "/api/Alquiler/{id}": {
+      "put": {
+        "tags": [
+          "Alquiler"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "estado",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Alquiler"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Alquiler": {
+      "get": {
+        "tags": [
+          "Alquiler"
+        ],
+        "parameters": [
+          {
+            "name": "docCliente",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "estado",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Alquiler"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyAlquilerDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyAlquilerDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyAlquilerDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Alquiler"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyAlquilerDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyAlquilerDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyAlquilerDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Marca": {
+      "get": {
+        "tags": [
+          "Marca"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TipoDoc": {
+      "get": {
+        "tags": [
+          "TipoDoc"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TipoVehiculo": {
+      "get": {
+        "tags": [
+          "TipoVehiculo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vehiculo/{id}": {
+      "put": {
+        "tags": [
+          "Vehiculo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "nvoEstado",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Vehiculo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Vehiculo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vehiculo": {
+      "get": {
+        "tags": [
+          "Vehiculo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Vehiculo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyVehiculoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyVehiculoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyVehiculoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Vehiculo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyVehiculoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyVehiculoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModifyVehiculoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vehiculo/Vehiculo/patente/{patente}": {
+      "get": {
+        "tags": [
+          "Vehiculo"
+        ],
+        "parameters": [
+          {
+            "name": "patente",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ModifyAlquilerDTO": {
+        "required": [
+          "id_clienteNavigation"
+        ],
+        "type": "object",
+        "properties": {
+          "id_alquiler": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_clienteNavigation": {
+            "$ref": "#/components/schemas/ModifyClienteDTO"
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "fecha_inicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fecha_fin": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "id_vehiculo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_sucursal": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModifyClienteDTO": {
+        "required": [
+          "documento",
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "id_cliente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "documento": {
+            "type": "string",
+            "nullable": true
+          },
+          "id_tipo_documento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "contactos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModifyContactoDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModifyContactoDTO": {
+        "required": [
+          "contacto"
+        ],
+        "type": "object",
+        "properties": {
+          "id_contacto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_tipo_contacto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "contacto": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModifyVehiculoDTO": {
+        "required": [
+          "modelo",
+          "patente"
+        ],
+        "type": "object",
+        "properties": {
+          "id_vehiculo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "patente": {
+            "type": "string",
+            "nullable": true
+          },
+          "id_tipo_vehiculo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_marca": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "valor_tasado": {
+            "type": "number",
+            "format": "double"
+          },
+          "id_estado_vehiculo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_sucursal": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
 }

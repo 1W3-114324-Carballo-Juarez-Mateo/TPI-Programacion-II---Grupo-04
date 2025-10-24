@@ -58,6 +58,7 @@ namespace WebApi_TPI_AIRCNR_PII.Repositories.Implementations
 
         public async Task<bool> Post(Alquiler a)
         {
+            a.id_estado_alquiler = 25;
             await _alquileres.AddAsync(a);
             return await _context.SaveChangesAsync() > 0;
         }

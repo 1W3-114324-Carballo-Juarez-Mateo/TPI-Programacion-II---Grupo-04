@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApi_TPI_AIRCNR_PII")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f192c04208bfe4a1f0dcea51ad96ad11fd656f01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c31c5030af7d7ecd60d0cd3f454a1460fe24778")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApi_TPI_AIRCNR_PII")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApi_TPI_AIRCNR_PII")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

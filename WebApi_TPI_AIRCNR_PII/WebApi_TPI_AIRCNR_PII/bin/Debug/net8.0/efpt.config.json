@@ -72,6 +72,10 @@
          "ObjectType": 0
       },
       {
+         "Name": "[dbo].[Usuarios_Empleados]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[dbo].[Vehiculos]",
          "ObjectType": 0
       }

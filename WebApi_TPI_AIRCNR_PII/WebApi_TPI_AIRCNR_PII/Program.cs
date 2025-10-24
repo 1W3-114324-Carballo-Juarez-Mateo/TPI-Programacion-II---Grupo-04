@@ -20,13 +20,14 @@ builder.Services.AddScoped<IAuxiliarRepository<Tipos_Vehiculo>, TiposVehiculosRe
 builder.Services.AddScoped<IAuxiliarRepository<Tipos_Documento>, TipoDocsRepository>();
 builder.Services.AddScoped<IAuxiliarRepository<Estados_Vehiculo>, EstadoVehiculoRepository>();
 builder.Services.AddScoped<IAuxiliarRepository<Sucursal>, SucursalRepository>();
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 
 //Services
 builder.Services.AddScoped<IAlquilerService, AlquilerService>();
 builder.Services.AddScoped<IVehiculoService, VehiculoService>();
-builder.Services.AddScoped<IAuxiliarService, MarcasService>();
-builder.Services.AddScoped<IAuxiliarService, TiposVehiculoService>();
-builder.Services.AddScoped<IAuxiliarService, TipoDocsService>();
+builder.Services.AddScoped<IAuxiliarService<Marca>, MarcasService>();
+builder.Services.AddScoped<IAuxiliarService<Tipos_Vehiculo>, TiposVehiculoService>();
+builder.Services.AddScoped<IAuxiliarService<Tipos_Documento>, TipoDocsService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

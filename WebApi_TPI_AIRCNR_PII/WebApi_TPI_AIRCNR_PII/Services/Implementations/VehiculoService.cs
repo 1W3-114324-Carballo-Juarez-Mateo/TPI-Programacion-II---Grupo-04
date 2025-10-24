@@ -154,6 +154,12 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
                     return "El valor tasado debe ser mayor a $2.500.000";                
                 }
 
+                //Valor_Tasado no debe ser mayor a $100.000.000
+                if (v.valor_tasado > 100000000)
+                {
+                    return "El valor tasado no debe superar la cifra de $100.000.000";
+                }
+
                 //Sucursal /que exista 8
                 if (await _repoSucursal.GetById(v.id_sucursal) == null) 
                 {

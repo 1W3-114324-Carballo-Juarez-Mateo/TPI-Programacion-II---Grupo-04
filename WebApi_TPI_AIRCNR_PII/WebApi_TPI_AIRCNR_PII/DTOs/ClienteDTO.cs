@@ -11,7 +11,7 @@ namespace WebApi_TPI_AIRCNR_PII.DTOs
 
         public required string documento { get; set; }
 
-        public virtual ICollection<Contacto> Contactos { get; set; } = new List<Contacto>();
+        public virtual ICollection<ContactoDTO> Contactos { get; set; } = new List<ContactoDTO>();
 
         public required virtual TipoDocDTO id_tipo_documentoNavigation { get; set; }
     }
@@ -26,6 +26,6 @@ namespace WebApi_TPI_AIRCNR_PII.DTOs
 
         public int id_tipo_documento { get; set; }
 
-        public virtual ICollection<Contacto> Contactos { get; set; } = new List<Contacto>();
+        public virtual ICollection<ModifyContactoDTO> Contactos { get; set; } = new List<ModifyContactoDTO>();
     }
 }

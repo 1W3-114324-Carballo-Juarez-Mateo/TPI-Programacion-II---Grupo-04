@@ -115,7 +115,7 @@ public partial class AlquileresContext : DbContext
         {
             entity.HasKey(e => e.id_contacto);
 
-            entity.Property(e => e.contacto1)
+            entity.Property(e => e.contacto)
                 .IsRequired()
                 .HasMaxLength(150)
                 .IsUnicode(false)
@@ -197,7 +197,7 @@ public partial class AlquileresContext : DbContext
         {
             entity.HasKey(e => e.id_marca);
 
-            entity.Property(e => e.marca1)
+            entity.Property(e => e.marca)
                 .IsRequired()
                 .HasMaxLength(100)
                 .IsUnicode(false)

@@ -1,1 +1,233 @@
-[]
+[
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.AlquilerController",
+    "Method": "GetAll",
+    "RelativePath": "api/Alquiler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "docCliente",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "estado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.AlquilerController",
+    "Method": "Post",
+    "RelativePath": "api/Alquiler",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "WebApi_TPI_AIRCNR_PII.DTOs.ModifyAlquilerDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.AlquilerController",
+    "Method": "Put",
+    "RelativePath": "api/Alquiler",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "WebApi_TPI_AIRCNR_PII.DTOs.ModifyAlquilerDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.AlquilerController",
+    "Method": "CambioEstado",
+    "RelativePath": "api/Alquiler/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.AlquilerController",
+    "Method": "GetById",
+    "RelativePath": "api/Alquiler/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.MarcaController",
+    "Method": "Get",
+    "RelativePath": "api/Marca",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.TipoDocController",
+    "Method": "Get",
+    "RelativePath": "api/TipoDoc",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.TipoVehiculoController",
+    "Method": "Get",
+    "RelativePath": "api/TipoVehiculo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.VehiculoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Vehiculo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.VehiculoController",
+    "Method": "Post",
+    "RelativePath": "api/Vehiculo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehiculo",
+        "Type": "WebApi_TPI_AIRCNR_PII.DTOs.ModifyVehiculoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.VehiculoController",
+    "Method": "Put",
+    "RelativePath": "api/Vehiculo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehiculo",
+        "Type": "WebApi_TPI_AIRCNR_PII.DTOs.ModifyVehiculoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.VehiculoController",
+    "Method": "CambioEstado",
+    "RelativePath": "api/Vehiculo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nvoEstado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.VehiculoController",
+    "Method": "GetById",
+    "RelativePath": "api/Vehiculo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.VehiculoController",
+    "Method": "Delete",
+    "RelativePath": "api/Vehiculo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_TPI_AIRCNR_PII.Controllers.VehiculoController",
+    "Method": "GetByPatent",
+    "RelativePath": "api/Vehiculo/Vehiculo/patente/{patente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patente",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
