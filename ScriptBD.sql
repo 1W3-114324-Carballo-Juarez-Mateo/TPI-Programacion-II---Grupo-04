@@ -220,12 +220,12 @@ VALUES
 ('Cerro de las Rosas', 25),
 ('Aeropuerto Internacional Ing. A. Taravella', 25);
 
-INSERT INTO Sucursales (id_barrio)
+INSERT INTO Sucursales (id_barrio, descripcion)
 VALUES
-(15),   -- La Unión, Ezeiza (Buenos Aires)
-(65),   -- Palermo Soho, Palermo (Buenos Aires)
-(135),  -- Aeropuerto de Córdoba
-(105);  -- Nueva Córdoba
+(15, 'Sucursal La Union (BS.AS)'),   -- La Unión, Ezeiza (Buenos Aires)
+(65, 'Sucursal Palermo Soho (BS.AS)'),   -- Palermo Soho, Palermo (Buenos Aires)
+(135, 'Sucursal del Aeropuerto (CBA)'),  -- Aeropuerto de Córdoba
+(105, 'Sucursal Nueva Cordoba (CBA)');  -- Nueva Córdoba
 
 INSERT INTO Tipos_Contactos (tipo)
 VALUES ('Mail'),
