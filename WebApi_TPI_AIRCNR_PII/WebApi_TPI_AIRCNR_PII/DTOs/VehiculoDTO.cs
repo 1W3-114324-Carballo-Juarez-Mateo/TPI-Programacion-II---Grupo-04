@@ -14,13 +14,13 @@ namespace WebApi_TPI_AIRCNR_PII.DTOs
 
         public int id_sucursal { get; set; }
 
-        public required virtual Estados_Vehiculo id_estado_vehiculoNavigation { get; set; }
+        public required virtual EstadoVehiculoDTO id_estado_vehiculoNavigation { get; set; }
 
-        public required virtual Marca id_marcaNavigation { get; set; }
+        public required virtual MarcaDTO id_marcaNavigation { get; set; }
 
-        public required virtual Sucursal id_sucursalNavigation { get; set; }
+        public required virtual SucursalDTO id_sucursalNavigation { get; set; }
 
-        public required virtual Tipos_Vehiculo id_tipo_vehiculoNavigation { get; set; }
+        public required virtual TipoVehiculoDTO id_tipo_vehiculoNavigation { get; set; }
     }
 
     public class ModifyVehiculoDTO()

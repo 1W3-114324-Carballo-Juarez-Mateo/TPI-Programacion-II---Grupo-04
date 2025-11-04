@@ -49,10 +49,26 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
                 patente = v.patente,
                 modelo = v.modelo,
                 valor_tasado = v.valor_tasado,
-                id_tipo_vehiculoNavigation = v.id_tipo_vehiculoNavigation,
-                id_marcaNavigation = v.id_marcaNavigation,
-                id_estado_vehiculoNavigation = v.id_estado_vehiculoNavigation,
-                id_sucursalNavigation = v.id_sucursalNavigation,
+                id_tipo_vehiculoNavigation = new TipoVehiculoDTO
+                {
+                    id_tipo_vehiculo = v.id_tipo_vehiculoNavigation.id_tipo_vehiculo,
+                    tipo = v.id_tipo_vehiculoNavigation.tipo
+                },
+                id_marcaNavigation = new MarcaDTO
+                {
+                    id_marca = v.id_marcaNavigation.id_marca,
+                    marca = v.id_marcaNavigation.marca
+                },
+                id_estado_vehiculoNavigation = new EstadoVehiculoDTO
+                {
+                    id_estado_vehiculo = v.id_estado_vehiculoNavigation.id_estado_vehiculo,
+                    estado_vehiculo = v.id_estado_vehiculoNavigation.estado_vehiculo
+                },
+                id_sucursalNavigation = new SucursalDTO
+                {
+                    id_sucursal = v.id_sucursalNavigation.id_sucursal,
+                    descripcion = v.id_sucursalNavigation.descripcion
+                },
             };   
         }
 

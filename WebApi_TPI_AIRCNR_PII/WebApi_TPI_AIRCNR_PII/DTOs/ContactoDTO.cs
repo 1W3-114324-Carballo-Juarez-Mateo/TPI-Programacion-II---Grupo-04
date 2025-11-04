@@ -8,7 +8,7 @@ namespace WebApi_TPI_AIRCNR_PII.DTOs
 
         public required string contacto { get; set; }
 
-        public required virtual Tipos_Contacto id_tipo_contactoNavigation { get; set; }
+        public required virtual TipoContactoDTO id_tipo_contactoNavigation { get; set; }
     }
 
     public class ModifyContactoDTO

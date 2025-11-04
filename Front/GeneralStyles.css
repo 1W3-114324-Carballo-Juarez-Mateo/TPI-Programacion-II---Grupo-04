@@ -1,0 +1,130 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ENCABEZADO */
+
+.Encabezado {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom right, #4e34a7, #1385f8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.EmpresaLogo{
+    width: 165px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.TituloPestaña{
+    width: calc(80% - 165px);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Logueo{
+    width: calc(20%);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.Perfil{
+    background-color: white;
+    color: #4e34a7;
+    width: 40px;
+    height: 32px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MENU LATERAL */
+
+.MenuLateral {
+    /*background-color: #12224a;*/
+    background: linear-gradient(to top, #4e34a7, #12224a);
+    width: 165px;
+    position: fixed;
+    top: 40px;
+    /* debajo del encabezado */
+    left: 0;
+    height: calc(100vh - 40px);
+    /* ajustado a la altura restante */
+    z-index: 1;
+    border: 2px solid #4e34a7;
+}
+
+.MenuLateral > a:hover{
+    color: #4e34a7;
+}
+
+.Opciones{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.Opciones-Content{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.Ajustes{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.Ajustes-Content{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CUERPO */
+
+.Cuerpo {
+    margin-top: 40px;
+    margin-left: 165px;
+    height: calc(100vh - 40px);
+    background-color: rgb(201, 190, 255);
+    width: calc(100% - 165px);
+}
+
+
+/* PIE PAGINA */
+
+.PiePagina{
+    background-color: #4e34a7;
+    width: 100%;
+    height: max-content;
+    color: white;
+    align-self: center;
+    justify-items: center;
+}

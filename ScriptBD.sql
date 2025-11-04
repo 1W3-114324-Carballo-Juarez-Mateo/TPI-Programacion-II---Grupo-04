@@ -243,3 +243,12 @@ VALUES ('Mateo Carballo Juarez', 114324, '44272598', 5, 5),
 ('Valentina Busceni', 412073, '48124188', 25, 5),
 ('Marco Ticiano Barabino', 412013, '41762189', 15, 5),
 ('Aylen Milena Garcia Maestri', 421410, '41349105', 35, 5);
+
+INSERT INTO Usuarios_Empleados (usuario, contraseña)
+VALUES ('Matu4091', '54D5CB2D332DBDB4850293CAAE4559CE88B65163F1EA5D4E4B3AC49D772DED14') --Contraseña: asd123
+
+UPDATE Empleados 
+SET id_usuario = 5
+WHERE id_empleado = 5
+
+

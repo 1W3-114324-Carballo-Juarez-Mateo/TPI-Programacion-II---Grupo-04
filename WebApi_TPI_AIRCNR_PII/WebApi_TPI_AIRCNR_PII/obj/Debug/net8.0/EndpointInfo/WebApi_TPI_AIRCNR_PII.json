@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "WebApi_TPI_AIRCNR_PII",
-    "version": "1.0"
+    "title": "Demo JWT API",
+    "version": "v1"
   },
   "paths": {
     "/api/Alquiler/{id}": {
@@ -142,10 +142,96 @@
         }
       }
     },
+    "/api/Auth/Login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/Register": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpleadoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpleadoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpleadoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Marca": {
       "get": {
         "tags": [
           "Marca"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Secured": {
+      "get": {
+        "tags": [
+          "Secured"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Sucursal": {
+      "get": {
+        "tags": [
+          "Sucursal"
         ],
         "responses": {
           "200": {
@@ -345,6 +431,44 @@
   },
   "components": {
     "schemas": {
+      "EmpleadoDTO": {
+        "required": [
+          "documento",
+          "id_sucursalNavigation",
+          "id_tipo_documentoNavigation",
+          "id_usuarioNavigation",
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "id_empleado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "legajo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "documento": {
+            "type": "string",
+            "nullable": true
+          },
+          "id_sucursalNavigation": {
+            "$ref": "#/components/schemas/SucursalDTO"
+          },
+          "id_tipo_documentoNavigation": {
+            "$ref": "#/components/schemas/TipoDocDTO"
+          },
+          "id_usuarioNavigation": {
+            "$ref": "#/components/schemas/UsuarioDTO"
+          }
+        },
+        "additionalProperties": false
+      },
       "ModifyAlquilerDTO": {
         "required": [
           "id_clienteNavigation"
@@ -477,7 +601,76 @@
           }
         },
         "additionalProperties": false
+      },
+      "SucursalDTO": {
+        "required": [
+          "descripcion"
+        ],
+        "type": "object",
+        "properties": {
+          "id_sucursal": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoDocDTO": {
+        "required": [
+          "tipo"
+        ],
+        "type": "object",
+        "properties": {
+          "id_tipo_documento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioDTO": {
+        "required": [
+          "contraseña",
+          "usuario"
+        ],
+        "type": "object",
+        "properties": {
+          "id_usuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "contraseña": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Ingrese el token JWT en este formato: Bearer {token}",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
       }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

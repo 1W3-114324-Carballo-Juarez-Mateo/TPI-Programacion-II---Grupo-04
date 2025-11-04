@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="LoginStyles.css">
+    <title>AIR CNR</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Crear cuenta</h1>    
+                <span>Ingrese un nombre de usuario y contraseña para registrarse</span>
+                <input id="textNombre" type="text" placeholder="Nombre Completo" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" required>
+                <input id="textLegajo" type="number" placeholder="Legajo" min="10000" required>
+                <div>
+                    <label>Tipo Documento</label>
+                    <select id="cboxTipoDoc" style="width: 155px; text-align: center;">
+                    </select>
+                </div>
+                <input id="textDocumento" type="text" placeholder="Documento" required>
+                <input id="textUsuario" type="text"
+                placeholder="Usuario" required>
+                <input id="textPassword" type="password"
+                placeholder="Contraseña" required>
+                <input id="textPasswordConfirm" type="password"
+                placeholder="Confirmar Contraseña" required>
+                <div>
+                    <label>Sucursal</label>
+                    <select id="cboxSucursal" style="width: 230px; text-align: center;">
+                    </select>
+                </div>
+                <button onclick="RegistrarEmpleado()">Sign up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                 <h1>Ingresar</h1>    
+                <span>Ingrese su usuario y contraseña</span>
+                <input id="textUsuarioLogin" type="text"
+                placeholder="Usuario" required>
+                <input id="textContraseñaLogin" type="password"
+                placeholder="Contraseña" required>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <button>Sign in</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                     <h1>¡Bienvenido a AIR CNR!</h1>
+                        <p>Ingresa tus datos para acceder</p>
+                    <button class="hidden" id="login">Ingresar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                                       <h1>¡Bienvenido de nuevo!</h1>
+                        <p>Ingresa tus datos para acceder</p>
+                    <button class="hidden" id="register">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="LoginScript.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            await CargarCombos();
+        })
+    </script>
+</body>
+
+</html>

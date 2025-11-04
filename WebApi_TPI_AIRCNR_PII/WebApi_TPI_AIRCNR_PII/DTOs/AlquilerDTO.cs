@@ -14,11 +14,11 @@ namespace WebApi_TPI_AIRCNR_PII.DTOs
 
         public required virtual ClienteDTO id_clienteNavigation { get; set; }
 
-        public required virtual Estados_Alquiler id_estado_alquilerNavigation { get; set; }
+        public required virtual EstadoAlquilerDTO id_estado_alquilerNavigation { get; set; }
 
-        public required virtual Sucursal id_sucursalNavigation { get; set; }
+        public required virtual SucursalDTO id_sucursalNavigation { get; set; }
 
-        public required virtual Vehiculo id_vehiculoNavigation { get; set; }
+        public required virtual VehiculoDTO id_vehiculoNavigation { get; set; }
     }
 
     public class ModifyAlquilerDTO()

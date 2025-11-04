@@ -82,14 +82,52 @@ namespace WebApi_TPI_AIRCNR_PII.Services.Implementations
                     Contactos = a.id_clienteNavigation.Contactos.Select(c => new ContactoDTO
                     {
                         contacto = c.contacto,
-                        id_tipo_contactoNavigation = c.id_tipo_contactoNavigation,
+                        id_tipo_contactoNavigation = new TipoContactoDTO
+                        {
+                            id_tipo_contacto = c.id_tipo_contactoNavigation.id_tipo_contacto,
+                            tipo = c.id_tipo_contactoNavigation.tipo
+                        },
                         id_contacto = c.id_contacto
                     }).ToList()
                 },
                 monto = a.monto,
-                id_sucursalNavigation = a.id_sucursalNavigation,
-                id_vehiculoNavigation = a.id_vehiculoNavigation,
-                id_estado_alquilerNavigation = a.id_estado_alquilerNavigation
+                id_sucursalNavigation = new SucursalDTO
+                {
+                    id_sucursal = a.id_sucursalNavigation.id_sucursal,
+                    descripcion = a.id_sucursalNavigation.descripcion
+                },
+                id_vehiculoNavigation = new VehiculoDTO
+                {
+                    id_vehiculo = a.id_vehiculoNavigation.id_vehiculo,
+                    modelo = a.id_vehiculoNavigation.modelo,
+                    patente = a.id_vehiculoNavigation.patente,
+                    valor_tasado = a.id_vehiculoNavigation.valor_tasado,
+                    id_sucursalNavigation = new SucursalDTO
+                    {
+                        id_sucursal = a.id_vehiculoNavigation.id_sucursalNavigation.id_sucursal,
+                        descripcion = a.id_vehiculoNavigation.id_sucursalNavigation.descripcion
+                    },
+                    id_estado_vehiculoNavigation = new EstadoVehiculoDTO
+                    {
+                        id_estado_vehiculo = a.id_vehiculoNavigation.id_estado_vehiculoNavigation.id_estado_vehiculo,
+                        estado_vehiculo = a.id_vehiculoNavigation.id_estado_vehiculoNavigation.estado_vehiculo
+                    },
+                    id_marcaNavigation = new MarcaDTO
+                    {
+                        id_marca = a.id_vehiculoNavigation.id_marcaNavigation.id_marca,
+                        marca = a.id_vehiculoNavigation.id_marcaNavigation.marca
+                    },
+                    id_tipo_vehiculoNavigation = new TipoVehiculoDTO
+                    {
+                        id_tipo_vehiculo = a.id_vehiculoNavigation.id_tipo_vehiculoNavigation.id_tipo_vehiculo,
+                        tipo = a.id_vehiculoNavigation.id_tipo_vehiculoNavigation.tipo
+                    }
+                },
+                id_estado_alquilerNavigation = new EstadoAlquilerDTO
+                {
+                    id_estado_alquiler = a.id_estado_alquilerNavigation.id_estado_alquiler,
+                    estado = a.id_estado_alquilerNavigation.estado
+                }
             };
         }
 

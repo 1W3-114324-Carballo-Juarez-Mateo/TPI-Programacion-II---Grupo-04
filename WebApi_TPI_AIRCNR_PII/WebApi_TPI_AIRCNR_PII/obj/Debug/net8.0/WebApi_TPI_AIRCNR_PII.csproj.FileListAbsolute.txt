@@ -162,3 +162,4 @@ C:\Users\valen\Desktop\Github 2025\TPI-Programacion-II---Grupo-04\WebApi_TPI_AIR
 C:\Users\valen\Desktop\Github 2025\TPI-Programacion-II---Grupo-04\WebApi_TPI_AIRCNR_PII\WebApi_TPI_AIRCNR_PII\obj\Debug\net8.0\WebApi_T.A7141734.Up2Date
 C:\Users\valen\Desktop\Github 2025\TPI-Programacion-II---Grupo-04\WebApi_TPI_AIRCNR_PII\WebApi_TPI_AIRCNR_PII\obj\Debug\net8.0\WebApi_TPI_AIRCNR_PII.genruntimeconfig.cache
 C:\Users\valen\Desktop\Github 2025\TPI-Programacion-II---Grupo-04\WebApi_TPI_AIRCNR_PII\WebApi_TPI_AIRCNR_PII\obj\Debug\net8.0\ref\WebApi_TPI_AIRCNR_PII.dll
+C:\Users\Usuario\Desktop\UTN TUP\Programacion II\TPI\TPI-Programacion-II---Grupo-04\WebApi_TPI_AIRCNR_PII\WebApi_TPI_AIRCNR_PII\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
